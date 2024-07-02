@@ -149,6 +149,47 @@ div .titleinfo {
 .dosis {
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
+
+
+@media (max-width:800px) {
+    .info, .items {
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    .info, .items {
+        max-width: none;
+        width: 90%;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;}
+        article {
+        padding: 100px;
+    }
+}
+
+@media (max-width:
+1268px) {
+     .items {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: none;
+        width: 90%;
+        text-align: center;
+        font-size: larger;
+        flex-direction: column;
+        justify-content: center;}
+        .projects, article {
+        padding: 100px;
+    }
+    .info {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+

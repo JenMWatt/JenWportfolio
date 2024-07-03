@@ -153,6 +153,13 @@ div .titleinfo {
 }
 
 
+
+h3 {
+    font-size: 25px;
+    gap: 0 auto;
+}
+
+
 @media (max-width:800px) {
     .info, .items {
         

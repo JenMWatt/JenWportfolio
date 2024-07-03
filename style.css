@@ -198,9 +198,9 @@ a:link {
         justify-content: center;
     }
         article {
-        padding: 100px;
+        padding: 10px;
         align-items: center;
-    
+        width: 200px;
     }
 }
 
@@ -217,7 +217,7 @@ a:link {
         flex-direction: column;
         justify-content: center;}
         .projects, article {
-        padding: 100px;
+        padding: 10px;
     }
     .info {
         align-items: center;
@@ -226,6 +226,8 @@ a:link {
     }
     .projects {
         align-items: center;
+        width: 200px;
+        padding: 126px;
     }
 }
 

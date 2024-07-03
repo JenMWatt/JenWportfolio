@@ -158,7 +158,28 @@ h3 {
     font-size: 25px;
     gap: 0 auto;
 }
+a:link { 
+    text-decoration: none; 
+    color: #4a55a7;
+  } 
 
+  a:visited { 
+    text-decoration: none; 
+    color: #2c307e;
+    
+  } 
+
+  a:hover { 
+    color: #5792a6;
+  } 
+.contactinfo button {
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
 
 @media (max-width:800px) {
     .info, .items {

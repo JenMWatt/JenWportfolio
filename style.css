@@ -1,16 +1,65 @@
 
 .header {
-    background-color: #ffc5e0;
+    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
     border: 1px solid grey;
     border-radius: 10px;
-    margin: 100vw auto;
     max-width: 100%;
-    margin: 10px auto;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Dosis", sans-serif;
     font-size: 35px;
-    color: black;
+    color: rgb(0, 0, 0);
     
+    
+}
+/* hamburger menu */
+.line1, .line2,.line3{
+display: flex;
+background-color: violet;
+border-radius: 50px;
+width: 50px;
+height: 8px;
+margin: 4px;
+margin-left: 20px;
+
+}
+
+.change .line1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .line2 {opacity: 0;}
+
+.change .line3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+padding: 10px;
+}
+nav a {
+  background-color: pink;
+  color: #303030;
+
+}
+nav a:hover {
+  background-color: rgb(255, 225, 236);
+  transition:ease .5s;
+  color: #000000;
+  border-radius: 100px;
+  padding: 20px;
+
+}
+.navbar {
+  border-radius: 100px;
+  width: 100%;
+  background-color: pink;
+  border: solid pink 10px;
 }
 
 /* main page , about me page is infohome and icon me */
@@ -28,8 +77,8 @@
   margin-right: 30px;
 }
 .infohome {
-    border: 1px solid grey;
-    background-color: rgb(255, 207, 231);
+    border: 1px solid grey;    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
     border-radius: 10px;
 
     max-width: 100%;
@@ -45,7 +94,8 @@
 }
 .info {
     border: 1px solid grey;
-    background-color: rgb(255, 207, 231);
+    background-image: url(./images/sky.jpg);
+    background-size: 100%;
     border-radius: 10px;
 
     max-width: 100%;
@@ -75,22 +125,20 @@ button {
     flex-direction: column;
    text-align: center;
     align-items: center;
-    padding: 1vw;
-    gap: 0.1vw;
-    margin: 1vw;
-    max-width: 70vw auto;
-    border: 1px solid rgb(163, 163, 163);
-    background-color:rgb(255, 207, 231);
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
+    border: 1px solid rgb(163, 163, 163);    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
 }
 .project {
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
     align-items: center;
-    padding: 10px;
-    width: 17vw;
-    gap: 10px;
-    margin: 200vw;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
     background-color: rgb(110, 110, 110);
 }
 img .project {
@@ -100,14 +148,14 @@ img .project {
   }
   
 body {
-    padding: 10px;
-    gap:10px;
     font-size: 20px;
     font-family: "Dosis", sans-serif;
     color: rgb(24, 24, 24);
-    background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(171,126,150,1) 0%, rgba(190,140,165,1) 0%, rgba(98,98,98,1) 73%, rgba(8,11,24,1) 100%); 
-}
+    background-image: url(/images/crystal.jpg);
+    background-size:cover;
+    min-width: 100px;
+    background-attachment:fixed ;
+  }
 /* for projects page */
 .gallery {
   width: 100%;
@@ -130,23 +178,35 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(171,126,150,1) 
       transform: scale(1);
   }
 }
+
+.column {
+
+  width: 100px;
+}
 .row , .column {
-  padding: 3px;
+  padding: 2%;
+
+  gap: 5%;
   display: flex;
- 
-  width: 100%;
+ flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
 }
-
+.row {
+  flex-direction: row;
+  
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
-  width: 200px;
+  width: 100px;
+  height: 100px;
 }
 
-/* Create four equal columns that floats next to eachother */
+/*slides */
+
+/*  */
 .gallerySlides {
   float:inherit ;
   width: 100%;
@@ -263,30 +323,175 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.captionforshanee {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  gap: 30%;
+  padding: 5%;
+  width:40%;
+}
+
+/* shanees portion with js */
+
+.col1 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flyers {
+  padding: 5%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: row;
+}
+
+.col1:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Create four equal columns that floats next to eachother */
+
+/* The Modal (background) */
+.modals {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modals-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.closex {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closex:hover,
+.closex:focus {
+  color: #ffb4ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.gallerySlidess {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevs,
+.nexts {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(136, 91, 91);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nexts {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevs:hover,
+.nexts:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.slidenumbers {
+  color: #ffb4ff;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-containers {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* testing gallery js */
 
 .items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100vw;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
        justify-content: baseline;
-    gap: 5px;
-    margin: 10px;
-    border: 10
-100px solid rgb(163, 163, 163);
-    border-radius: 10px;
-    background-color:rgb(255, 207, 231);
+    border: 1px solid grey;
+    border-radius: 10px;    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
 }   
 .textgreen {
     border-radius: 40px;
-    width: 350px;padding: 50px;
+    width: 350px;
     background-color: whitesmoke;
-    gap: 5px;
-    margin: 30px;
-    padding-left: 30px ;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
    justify-content: center;
-    padding-right: 30px;
 }
 .textgreens {
     border-radius: 40px;
@@ -294,9 +499,9 @@ img.hover-shadow {
     align-items: center;
     display: flex;
     background-color: whitesmoke;
-   padding: 100px;
-   text-align: center;
-   margin: 30px;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
    justify-content: center;
 }
 
@@ -304,9 +509,10 @@ img.hover-shadow {
     display: flex;
   align-items: center;
     justify-content: baseline;
-    gap: 10px;
-    margin: 10px;
-
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
+flex-direction: column;
     border-radius: 10px;
     align-items: center;
 }
@@ -325,13 +531,15 @@ img.hover-shadow {
 .itemsgreen {
     justify-content: center;
     display: flex;
+    border: 1px solid grey;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    padding: 1px;
-    border-radius: 10px;
-    background-color:rgb(255, 207, 231);
-    margin-top: 20px;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
+
 }
  .itemsgreen img {
     width: 30vw;
@@ -444,21 +652,31 @@ border-radius: 20px;
 /* for resume page */
 
 .resume {
-    border: 1px solid rgb(247, 38, 233);
-    background-color:rgb(255, 207, 231);
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 2%;
+  border: 1px solid grey;
     border-radius: 10px;
     color: rgb(37, 45, 48);
-    max-width: 64%;
-    padding: 10px;
-    max-width: 100%;
-    margin: 10px auto;
-    gap: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    font-size: smaller;
+    background-image: url(/images/sky.jpg);
+    background-size: 100% ;
+    font-size:larger;
+}
+
+.resumetext {
+  border-radius: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
 }
 
 .resume img {
@@ -498,7 +716,7 @@ div .titleinfo {
   font-style: normal;
 }
 
-
+/* nav bar and other links info  */
 
 h3 {
     font-size: 25px;
@@ -506,13 +724,14 @@ h3 {
 }
 a:link { 
     text-decoration: none; 
-    color: #824aa7;
+    color: #53324a;
+  
+  
   } 
 
   a:visited { 
-    text-decoration: none; 
-    color: #742c7e;
-    
+    color: #3a2938;
+
   } 
 
   a:hover { 
@@ -528,8 +747,129 @@ a:link {
     font-style: normal;
 }
 
+/* business project section */
 
+#miniimg {
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+.business {
+  padding: 10px;
+}
+#miniimg:hover { opacity: 0.7;;}
+.minimodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0,0,0,0.9);
+}
+.minimodalcontent {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#minicaption{
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 700px;
+  text-align: center;
+  color: #efcaec;
+  padding: 10px 0;
+  height: 150px;
+}
+.minimodalcontent, #minicaption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.xclose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #e65dbd;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.xclose:hover, .xclose:focus {
+  color: #742c7e;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+/* mini modal 2 */
+
+#miniimg2 {
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+#miniimg2:hover { opacity: 0.7;;}
+.minimodal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0,0,0,0.9);
+}
+.minimodalcontent2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#minicaption2{
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 700px;
+  text-align: center;
+  color: #efcaec;
+  padding: 10px 0;
+  height: 150px;
+}
+.minimodalcontent2, #minicaption2 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.xclosex {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #e65dbd;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.xclosex:hover, .xclosex:focus {
+  color: #742c7e;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* 
 .itemsgreen {
   justify-content: center;
@@ -554,10 +894,16 @@ a:link {
 
 
   .iconme{
-    position:relative;
+    justify-content: center;
+    margin: 0px;
+    width: 92%;
+
   }
   .iconme img {
-    width: 450px auto;
+    height: 100%;
+    width: 100%;
+   
+    
   }
   .hometext {
 
@@ -573,10 +919,10 @@ a:link {
   
       max-width: 100%;
       padding: 10px;
-      padding-left: 0px;
+      padding-left: 20px;
       padding-right: 0px;
       margin: 10px auto;
-      gap: 0px;
+      gap: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;

@@ -15,27 +15,29 @@
         <h1>Projects by Jen !</h1>
         
         <nav>
-           
-            <a class="link" href="/home.html">
-                About Jen
-            </a> 
-                - 
+           <div class="navbar">
+
+               <a class="link" href="/home.html">
+                   About Jen
+                </a> 
+                
                 <a class="link" href="/projects.html">
                     Projects
                 </a>
-                - 
+                
                 <a class="link" href="/codingprojects.html">
                     Coding Projects
                 </a>
-                 - 
+                
                 <a class="link" href="/resume.html">
                     Resume
                 </a>
-                -
+                
                 <a class="link" href="/contact.html">
                     Contact Me
                 </a>
-            
+                
+            </div>
         </nav>
     </div>
     <!-- first header for digital arts -->
@@ -49,21 +51,27 @@
     <!-- adding projects, working on flex/ css -->
 <div class="main">    
     <div class="itemsgreen">
-        
+         <div class="textgreen">
+                
+                <p>
+                    for our digital arts class, I made a set of business cards and matching icons for a client within my digital arts class. I used the softwares Canva and Krita.
+                </p>
+                <br>
+            </div>
         <div class="green">
             
             
             <!-- add a tags for images -->
          
-                        <div class="row">
+                    <div class="row">
                         <div class="column">
-                            <img  class="demo cursor" src="./images/1.jpg"  style="width:20%" onclick="openModal();currentSlide(1)">
+                            <img  class="hover-shadow cursor" src="./images/111.png" onclick="openModal();currentSlide(1)"alt="Logo for Tsista's business proposal.">
                         </div>
                         <div class="column">
-                            <img  class="demo cursor" src="./images/LogoChimnissingHydroponics.png"  style="width:20%" onclick="openModal();currentSlide(1)">
+                            <img  class="hover-shadow cursor" src="./images/222.png" onclick="openModal();currentSlide(2)"alt="Logo for Tsista's business proposal.">
                         </div>
                         <div class="column">
-                            <img  class="demo cursor" src="./images/2.jpg"  style="width:20%" onclick="openModal();currentSlide(1)">
+                            <img  class="hover-shadow cursor" src="./images/333.png"onclick="openModal();currentSlide(3)"alt="Logo for Tsista's business proposal.">
                         </div>
                     </div>
             <div class="modal" id="myModal">
@@ -89,42 +97,87 @@
                     <a class="next" onClick="plusSlidess(1)">&#10095;</a>
                     <div class="caption-container">
                         <p id="caption"></p>
-                    </div>
-                    
+                  
                 </div>
+
             </div>
         </div>
           <br>
 
-            <div class="textgreen">
-                
-                <p>
-                    for our digital arts class, I made a set of business cards and matching icons for a client within my digital arts class. I used the softwares Canva and Krita.
-                </p>
-                <br>
-            </div>
+           
     </div> 
+    </div>
     <!-- the project above is for Tsista's work idea -->
 <div class="itemsgreen">
-<div class="green">
-
-    <img src="./images/FBbanner.png" alt="">
-
-    <br>
-    <img src="./images/flyer.png" alt="">
-    <br>
-    <img src="./images/logo.png" alt="">
-    <br></div>
-    
-    <div class="textgreen">
+    <div class="green">
+            <div class="captionforshanee">
+                <p>
+                    As my capstone for my digital arts class within Indigitech, I made a set of digital art pieces. A banner, a flyer, and a business logo. I used the softwares Canva and Krita.
+                </p>
+            </div>
             <br>
-        <p>
-            As my capstone for my digital arts class within Indigitech, I made a set of digital art pieces. A banner, a flyer, and a business logo. I used the softwares Canva and Krita.
-        </p>
-        <!-- the project above is for Shanee's work idea -->
-</div>
+        <div class="flyers">
+            <div class="col1">
+                <!-- project for Shanee  -->
+                <img src="./images/11.png" class="demos" style="width:100%" onclick="openModals();currentSlides(1)" alt="Banner for Shanee's business proposal.">
+            </div>
+            <!-- thumbnails -->
+            <div class="col1"> 
+                <img src="./images/22.png"  class="demos" style="width:100%" onclick="openModals();currentSlides(2)" alt="Social media flyer for Shanee's business proposal.">
+            
+                </div><div class="col1">
+                    <img src="./images/33.png"  class="demos" style="width:100%" onclick="openModals();currentSlides(3)" alt="Social media flyer for Shanee's business proposal.">
+                </div>
+                <div class="col1">
+                    <img src="./images/44.png"  class="demos" style="width:100%" onclick="openModals();currentSlides(4)" alt="Matching logo for Shanee's business proposal.">
+                </div>
+                
+            <!-- modal for Shanee -->
+            <div class="modals" id="myModals">
+                <span class="closex" onclick="closeModals()">&times;</span>
+                <div class="modals-content">
+                    <!-- first image for second modal lightbox -->   <div class="gallerySlidess">
+                        <div class="slidenumbers">1/4</div>
+                        <img src="./images/FBbanner.png" style="width: 100%">
+                    </div>
+                    
+                    <div class="gallerySlidess">
+                        <div class="slidenumbers">2/4</div>
+                        <img src="./images/businesslogo.png" style="width: 100%">
+                    </div>
+                    
+                    <!-- second image for second modal lightbox -->
+                
+                    <!-- third image for second modal lightbox -->
 
+                
+                    <div class="gallerySlidess">
+                        <div class="slidenumbers">3/4</div>
+                        <img src="./images/flyer.png" style="width: 100%">
+                    </div>
+                    
+                    <!-- fourth image for second modal lightbox -->
+                    <div class="gallerySlidess">
+                        <div class="slidenumbers">4/4</div>
+                        <img src="./images/logo.png" style="width: 100%">
+                    </div>
+                    <!-- next and previous button -->
+                    <a class="prevs" onClick="plusSlidesss(-1)">&#10094;</a>
+                    <a class="nexts" onClick="plusSlidesss(1)">&#10095;</a>
+                    <div class="caption-containers">
+                        <p id="captions"></p>
+                    </div>
+
+                    <!-- the project above is for Shanee's work idea -->
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+    
+</div>
+</div>
+</div>
     
     <section class="info">
 <!-- header for business projects -->
@@ -133,16 +186,35 @@
         </h2>
     </section>
     <div class="itemsgreen">
-        <div class="green">
+        <div class="business">
 
-            <img src="./images/Jen’s.png" alt="">
-            <br> <div class="textgreen">
+            <div class="green">
+                <img src="./images/Jen’s.png" alt="business idea" id="miniimg" style="width:100%;max-width:300px">
+                <div class="minimodal" id="smolmodal">
+                    <span class="xclose">
+                        &times;
+                    </span>
+                    <img class="minimodalcontent" id="img1">
+                    <div id="minicaption"></div>
+                </div>
+            </div>
+                <div class="textgreen">
 
                 <p> Advertisements I made on Canva for my business class within Indigitech. I also used Krita and Canva for these! If I were to make a business opportunity, I would potentinally open up my own software development business. </p>
                 <br>
             </div>
-            <img src="./images/Red project.png" alt="">
+
+            <div class="green">
+                <img src="./images/Red project.png" alt="business idea" id="miniimg2" style="width:100%;max-width:300px">
+                <div class="minimodal2" id="smolmodals">
+                    <span class="xclosex">
+                        &times;
+                    </span>
+                    <img class="minimodalcontent2" id="img2">
+                    <div id="minicaption2"></div>
+            </div>
            
+            
             
         </div>
         </div>
@@ -279,30 +351,30 @@
             </div>
     
     
-    <a class="prev" onclick="plusSlides(-1)"> ⮜</a>
-    <a class="next" onclick="plusSlides(1)"> ⮞</a>
+    <a class="prev" onclick="plusSlide(-1)"> ⮜</a>
+    <a class="next" onclick="plusSlide(1)"> ⮞</a>
 </div>  
 <br>
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                    <span class="dot" onclick="currentSlide(10)"></span>
-                    <span class="dot" onclick="currentSlide(11)"></span>
-                    <span class="dot" onclick="currentSlide(12)"></span>
-                    <span class="dot" onclick="currentSlide(13)"></span>
-                    <span class="dot" onclick="currentSlide(14)"></span>
-                    <span class="dot" onclick="currentSlide(15)"></span>
-                    <span class="dot" onclick="currentSlide(16)"></span>
-                    <span class="dot" onclick="currentSlide(17)"></span>
-                    <span class="dot" onclick="currentSlide(18)"></span>
-                    <span class="dot" onclick="currentSlide(19)"></span>
+                    <span class="dot" onclick="currentSlidez(1)"></span>
+                    <span class="dot" onclick="currentSlidez(2)"></span>
+                    <span class="dot" onclick="currentSlidez(3)"></span>
+                    <span class="dot" onclick="currentSlidez(4)"></span>
+                    <span class="dot" onclick="currentSlidez(5)"></span>
+                    <span class="dot" onclick="currentSlidez(6)"></span>
+                    <span class="dot" onclick="currentSlidez(7)"></span>
+                    <span class="dot" onclick="currentSlidez(8)"></span>
+                    <span class="dot" onclick="currentSlidez(9)"></span>
+                    <span class="dot" onclick="currentSlidez(10)"></span>
+                    <span class="dot" onclick="currentSlidez(11)"></span>
+                    <span class="dot" onclick="currentSlidez(12)"></span>
+                    <span class="dot" onclick="currentSlidez(13)"></span>
+                    <span class="dot" onclick="currentSlidez(14)"></span>
+                    <span class="dot" onclick="currentSlidez(15)"></span>
+                    <span class="dot" onclick="currentSlidez(16)"></span>
+                    <span class="dot" onclick="currentSlidez(17)"></span>
+                    <span class="dot" onclick="currentSlidez(18)"></span>
+                    <span class="dot" onclick="currentSlidez(19)"></span>
                 </div>
                 <br>
 
@@ -330,6 +402,9 @@
     </div>
 
 </div>
+
+
+
    <script src="./info.js">
 
    </script>
